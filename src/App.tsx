@@ -29,18 +29,6 @@ import {
 import { motion, AnimatePresence } from 'motion/react';
 
 // --- Types ---
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'langflow-chat': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement> & {
-        window_title?: string;
-        flow_id?: string;
-        host_url?: string;
-      }, HTMLElement>;
-    }
-  }
-}
-
 interface Service {
   id: string;
   title: string;
@@ -688,11 +676,6 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
-      <langflow-chat
-        window_title="BUSINESS ASISSTANT"
-        flow_id="2032492f-7b58-4e7d-b2d5-ce250a80690b"
-        host_url="http://localhost:7860"
-      ></langflow-chat>
     </div>
   );
 }
