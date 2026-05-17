@@ -6,6 +6,14 @@
     <title>BrightSmile Dental Clinic</title>
   </head>
   <body>
+    <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "30849d9a-5cb7-4e61-9672-f21869729930",
+        apiHost: "http://localhost:3000",
+    })
+</script>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
